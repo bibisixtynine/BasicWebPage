@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#378844" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#378844" media="(prefers-color-scheme: dark)">
 
-    <link rel="icon" href="https://cdn.glitch.global/7a1a98ee-e506-4952-9e03-e1100cc9f492/icon.png?v=1694288507540"/>
+    <link rel="icon" href="theo192.jpg"/>
 
     <meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
 
@@ -21,7 +21,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="WebSockets demo" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link rel="apple-touch-icon" href="theo.jpg" />
+    <link rel="apple-touch-icon" href="theo192.jpg" />
     
     <!-- PWA - microsoft specific -->
     <meta name="msapplication-TileColor" content="#0000FF" />
@@ -41,7 +41,7 @@
         window.location.protocol = "https";
         console.log("🔒 Enforcing https");
       } else {
-        console.log("🛠️ Running in localhost or file, not enforcing https");
+        console.log("💻 Running in localhost or file, not enforcing https");
       }
       
     </script>
@@ -53,12 +53,12 @@
             .register("/sw.js")
             .then((registration) => {
               console.log(
-                "Service Worker registered with scope:",
+                "🛠️ Service Worker registered with scope:",
                 registration.scope
               );
             })
             .catch((error) => {
-              console.error("Service Worker registration failed:", error);
+              console.error("🚨 Service Worker registration failed:", error);
             });
         });
       }
