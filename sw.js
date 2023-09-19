@@ -8,8 +8,8 @@ self.addEventListener("install", (event) => {
             "/theo.jpg",
             "/main.js",
             "/jysuis.js",
-            "/styles.css"
-
+            "/styles.css",
+            "https://cdn.glitch.global/7a1a98ee-e506-4952-9e03-e1100cc9f492/icon.png?v=1694288507540"
         ]);
       })
     );
