@@ -3,13 +3,67 @@
 <html>
 
 <head>
-    <title>Basic Web Page </title>
-    <meta charset="utf-8">
-    <meta name="description" content="Basic Web Page">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="John Doe">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JYSUIS.JS DEMO</title>
+    
+    <meta name="description" content="a SwiftUI like js lib" />
+    <meta name="application-name" content="jysuis-demo" />
+    <meta name="theme-color" content="#378844" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#378844" media="(prefers-color-scheme: dark)">
+
+    <link rel="icon" href="theo.jpg" />
+
+    <meta name="viewport" content="viewport-fit=cover, user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+    
+    <!-- PWA - apple specific -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="WebSockets demo" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="theo.jpg" />
+    
+    <!-- PWA - microsoft specific -->
+    <meta name="msapplication-TileColor" content="#0000FF" />
+    <meta name="msapplication-TileImage" content="theo.jpg" />
+
+    
+    <!-- if not running in localhost or file, assure running https -->
+    <script>
+      if (window.location.protocol == "https:") {
+        console.log("🔒 Running in https");
+      } else if (
+        window.location.protocol !== "https:" &&
+        window.location.hostname !== "localhost" &&
+        window.location.protocol !== "file:"
+      ) {
+        window.location.protocol = "https";
+        console.log("🔒 Enforcing https");
+      } else {
+        console.log("🛠️ Running in localhost or file, not enforcing https");
+      }
+    </script>
+    
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registered with scope:",
+                registration.scope
+              );
+            })
+            .catch((error) => {
+              console.error("Service Worker registration failed:", error);
+            });
+        });
+      }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
+    
     <script type = "module" src="main.js"></script>
 
     <style>

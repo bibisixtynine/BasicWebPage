@@ -1,0 +1,15 @@
+{
+    "name": "JYSUIS.JS LIB DEMO",
+    "short_name": "jysuis-demo",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#378844",
+    "theme_color": "#378844",
+    "icons": [
+        {
+            "src": "theo.jpg",
+            "sizes": "512x512",
+            "type": "image/jpg"
+        }
+    ]
+  }
