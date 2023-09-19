@@ -57,7 +57,7 @@ Body(
     Spacer(),
     HStack(
         Spacer(),
-            Image('theo192.jpg')
+            Image('theo512.png')
                 .width('200px')
                 .onClick(() => alert('Image Clicked')),
         Spacer(),
