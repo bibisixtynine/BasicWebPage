@@ -1,12 +1,17 @@
-<!-- hello world -->
 <!DOCTYPE html>
+<html lang="en">
+
 <html>
 
-<head>
-    <title>JYSUIS.JS DEMO</title>
+  <head>
+    <meta charset="UTF-8">
     
+    <title>jyssuis.js demo</title>
+
+    <meta name="author" content="bibisixtynine">
     <meta name="description" content="a SwiftUI like js lib" />
     <meta name="application-name" content="jysuis-demo" />
+
     <meta name="theme-color" content="#378844" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#378844" media="(prefers-color-scheme: dark)">
 
@@ -28,11 +33,10 @@
     <meta name="msapplication-TileImage" content="theo512.png" />
 
     
-    <!-- if not running in localhost or file, assure running https -->
+    <!-- if not running in localhost or file, force running https -->
     <script>
-      
-      console.log("protocol : " + window.location.protocol)
-      console.log("hostname : " + window.location.hostname)
+      console.log("🌍 protocol : " + window.location.protocol)
+      console.log("🌍 hostname : " + window.location.hostname)
       
       if (window.location.protocol == "https:") {
         console.log("🔒 Running in https");
@@ -47,11 +51,10 @@
       } else {
         console.log("💻 Running in localhost or file, not enforcing https");
       }
-      
     </script>
     
+    <!-- PWA - service worker -->
     <script>
-      
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
           navigator.serviceWorker
@@ -69,19 +72,23 @@
       }
     </script>
 
+    <!-- styles -->
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Google Fonts-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital@1&display=swap');
+    </style>
+
+    <!-- MAIN scripts -->
     <script type = "module" src="main.js"></script>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital@1&display=swap');
-    </style>
-</head>
+  </head>
 
-<body>
-
-</body>
+  <!-- the body will be dynamically filled with the jysuis.js lib -->
+  <body>
+  </body>
 
 </html>
