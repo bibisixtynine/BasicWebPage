@@ -30,13 +30,17 @@
     
     <!-- if not running in localhost or file, assure running https -->
     <script>
-        
+      
+      console.log("protocol : " + window.location.protocol)
+      console.log("hostname : " + window.location.hostname)
+      
       if (window.location.protocol == "https:") {
         console.log("🔒 Running in https");
       } else if (
         window.location.protocol !== "https:" &&
         window.location.hostname !== "localhost" &&
-        window.location.protocol !== "file:"
+        window.location.protocol !== "file:" &&
+        window.location.hostname !== "127.0.0.1"
       ) {
         window.location.protocol = "https";
         console.log("🔒 Enforcing https");
@@ -47,6 +51,7 @@
     </script>
     
     <script>
+      
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
           navigator.serviceWorker
