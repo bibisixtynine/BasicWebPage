@@ -57,7 +57,7 @@ Body(
     Spacer(),
     HStack(
         Spacer(),
-            Image('theo512.png')
+            Image('theo192.png')
                 .width('200px')
                 .onClick(() => alert('Image Clicked')),
         Spacer(),
@@ -66,7 +66,7 @@ Body(
     myScrollViewComponent
         .height('100px'),
     Spacer(),
-    Text("My First Web Site")
+    Text("My Great Web Site")
         .fontSize("50px")
         .fontFamily('Luckiest Guy')
         .foregroundColor("red"),

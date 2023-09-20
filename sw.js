@@ -8,7 +8,7 @@ self.addEventListener("install", (event) => {
             "/main.js",
             "/jysuis.js",
             "/styles.css",
-            "/theo512.png"
+            "/theo192.png"
         ]);
       })
     );
