@@ -2,6 +2,10 @@
 ## a basic UI lib inspired by swiftui ##
 ### version alpha 0.1 - just a prototype - proof of concept ###
 
+<p align="center">
+  <a href="https://www.zx80.app"><img src="screenshot.png" height="auto" width="90%"></a>
+</p>
+
 This is a short demo, installable as a webApp with a very basic website
 
 ### Code example ###
