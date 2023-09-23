@@ -5,7 +5,7 @@ import { Body, Text, HStack, VStack, Spacer, Circle, Image, ZStack, ScrollView }
 
 const scrollViewContent =
     VStack(
-        Text("🌮 Tacoos are life!").fontFamily('Averia Libre'),
+        Text("🌮 Tacos are life!").fontFamily('Averia Libre'),
         Text("🍕 Pizza is bae!").fontFamily('Averia Libre'),
         Text("🍔 Burgers for the win!").fontFamily('Averia Libre'),
         Text("🍦 Ice cream heaven!").fontFamily('Averia Libre'),
@@ -66,7 +66,7 @@ Body(
     myScrollViewComponent
         .height('100px'),
     Spacer(),
-    Text("My Greeat Web Site")
+    Text("My Great Web Site")
         .fontSize("50px")
         .fontFamily('Luckiest Guy')
         .foregroundColor("red"),
