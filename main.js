@@ -5,7 +5,7 @@ import { Body, Text, HStack, VStack, Spacer, Circle, Image, ZStack, ScrollView }
 
 const scrollViewContent =
     VStack(
-        Text("🌮 Tacos are life!").fontFamily('Averia Libre'),
+        Text("🌮 Tacoos are life!").fontFamily('Averia Libre'),
         Text("🍕 Pizza is bae!").fontFamily('Averia Libre'),
         Text("🍔 Burgers for the win!").fontFamily('Averia Libre'),
         Text("🍦 Ice cream heaven!").fontFamily('Averia Libre'),
