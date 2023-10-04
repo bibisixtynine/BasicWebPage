@@ -118,9 +118,9 @@ Windows ?
 OSX ?
 
 
-### Plays with jysuisjs live on Glitch, just press the button :
+### Play with jysuisjs live on Glitch, just press the button :
 
-- [![Open in Glitch](https://cdn.glitch.global/612ceed7-8937-4cf1-b9e5-35fea986d94b/openwithglitch.svg?v=1696430639498)](https://glitch.com/edit/#!/import/github/bibisixtynine/zx80)
-- it will create on glitch.com your own version of this jysuisjs demo app !
+- [![Open in Glitch](https://cdn.glitch.global/612ceed7-8937-4cf1-b9e5-35fea986d94b/openwithglitch.svg?v=1696430639498)](https://glitch.com/edit/#!/import/github/bibisixtynine/basicwebpage)
+- it will create on glitch.com your own copy of this jysuisjs demo app !
 - You'll be able to read and live-modify the code and see the changes live in the preview window !
 - and access to your webapp immediatly on the web : no deploy... it's online from the beginning !
