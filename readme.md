@@ -1,6 +1,6 @@
 # jysuis.js #
 ## a basic UI lib inspired by swiftui ##
-### version alpha 0.1a - just a prototype - proof of concept ###
+### version alpha 0.1b - just a prototype - proof of concept ###
 
 <img src="https://cdn.glitch.global/90406b38-27a5-47d6-81ab-1f60627ed618/screenshot.png?v=1696456591059" height="auto" width="90%">
 
